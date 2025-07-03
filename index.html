@@ -24,14 +24,19 @@
   </noscript>
   <!-- End Facebook Pixel Code -->
 
-  <!-- Redirecionamento após 2 segundos -->
-  <meta http-equiv="refresh" content="2;url=https://wa.me/5519982927270">
+  <!-- Redirecionamento com atraso para garantir execução do Pixel -->
+  <script>
+    setTimeout(function() {
+      window.location.href = "https://wa.me/5519982927270";
+    }, 2000); // redireciona após 2 segundos
+  </script>
 
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
       padding-top: 60px;
+      background-color: #ffffff;
     }
     img {
       width: 300px;
