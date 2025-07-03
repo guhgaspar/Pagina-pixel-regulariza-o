@@ -1,0 +1,1 @@
+# Pagina-pixel-regulariza-o
