@@ -26,9 +26,12 @@
   <script>
     function redirecionarComPixel() {
       fbq('track', 'PageView');
+
+      document.getElementById("mensagem").innerText = "Aguarde, você está sendo redirecionado...";
+
       setTimeout(function () {
         window.location.href = "https://wa.me/5519982927270";
-      }, 500); // espera 0.5s para garantir envio do evento
+      }, 1000); // espera 1 segundo antes de redirecionar
     }
   </script>
 
@@ -64,7 +67,7 @@
 </head>
 <body>
   <img src="Tudo-certo-1024x1024.png" alt="Tudo certo - Página segura">
-  <h1>Você está em uma página segura<br>clique abaixo para continuar</h1>
+  <h1 id="mensagem">Você está em uma página segura<br>clique abaixo para continuar</h1>
   <button onclick="redirecionarComPixel()">Ir para o WhatsApp</button>
 </body>
 </html>
