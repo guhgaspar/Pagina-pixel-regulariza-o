@@ -15,23 +15,21 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1345559773023784');
+    fbq('init', '732747142568686');
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1345559773023784&ev=PageView&noscript=1"/>
+    src="https://www.facebook.com/tr?id=732747142568686&ev=PageView&noscript=1"/>
   </noscript>
   <!-- End Facebook Pixel Code -->
 
   <script>
     function redirecionarComPixel() {
       fbq('track', 'ClickWhatsApp');
-
       document.getElementById("mensagem").innerText = "Aguarde, você está sendo redirecionado...";
-
       setTimeout(function () {
         window.location.href = "https://wa.me/5519982927270";
-      }, 1000); // espera 1 segundo antes de redirecionar
+      }, 1000);
     }
   </script>
 
@@ -71,4 +69,3 @@
   <button onclick="redirecionarComPixel()">Ir para o WhatsApp</button>
 </body>
 </html>
-
