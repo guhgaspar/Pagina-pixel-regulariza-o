@@ -24,13 +24,6 @@
   </noscript>
   <!-- End Facebook Pixel Code -->
 
-  <!-- Redirecionamento com atraso maior -->
-  <script>
-    setTimeout(function() {
-      window.location.href = "https://wa.me/5519982927270";
-    }, 3000); // Espera 3 segundos antes de redirecionar
-  </script>
-
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -39,17 +32,33 @@
       background-color: #ffffff;
     }
     img {
-      width: 300px;
+      width: 380px;
       margin-bottom: 25px;
     }
     h1 {
       font-size: 22px;
       color: #333;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1ebc5e;
     }
   </style>
 </head>
 <body>
   <img src="Tudo-certo-1024x1024.png" alt="Tudo certo - Página segura">
-  <h1>Você está sendo redirecionado com segurança<br>para o WhatsApp...</h1>
+  <h1>Você está em uma página segura<br>clique abaixo para continuar</h1>
+  <button onclick="window.location.href='https://wa.me/5519982927270'">
+    Ir para o WhatsApp
+  </button>
 </body>
 </html>
